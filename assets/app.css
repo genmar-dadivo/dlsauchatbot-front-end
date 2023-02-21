@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700'); 
+
+body {
+	font-family: 'Poppins';
+}
+
+.mobile { display: none; }
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+.chat {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #D6D09C;
+  border-radius: 5px;
+}
+
+.chat-header {
+  background: #267567;
+  padding: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: auto;
+  display: block;
+}
+
+.wrapper-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
+
+
+
+
+
+
+
+
+.chat .header-chat .name {
+	margin: 0 0 0 20px;
+	text-transform: uppercase;
+	font-family:'Montserrat', sans-serif;
+	font-size: 13pt;
+	color:#515151;
+  }
+  
+  .chat .header-chat .right {
+	position: absolute;
+	right: 40px;
+  }
+  
+  .chat .messages-chat {
+	padding: 25px 35px;
+	height: 700px;
+	max-height: 700px;
+	overflow-x: auto;
+  }
+  
+  .chat .messages-chat .message {
+	display:flex;
+	align-items: center;
+	margin-bottom: 8px;
+  }
+  
+  .chat .messages-chat .message .photo {
+	  display: block;
+	  width: 45px;
+	  height: 45px;
+	  background: #E6E7ED;
+	  border-radius: 50px;
+	  background-position: center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+  }
+  
+  .chat .messages-chat .text {
+	margin: 0 35px;
+	background-color: #f6f6f6;
+	padding: 15px;
+	border-radius: 12px;
+  }
+  
+  .text-only {
+	margin-left: 45px;
+  }
+  .response {
+	float: right;
+	margin-right: 0px !important;
+	margin-left:auto; /* flexbox alignment rule */
+  }
+  
+  .response .text {
+	background-color: #e3effd !important;
+  }
+
+  .input-icons i {
+	position: absolute;
+}
+.input-icons {
+	width: 80%;
+}
+.icon {
+	padding: 10px;
+	min-width: 40px;
+}
+.choices-web {
+	border-radius: 30px;
+	position: relative;
+	margin-bottom: 15px;
+	margin-left: 45px;
+	margin-top: 15px;
+}
+.option {
+	background-color: rgba(0, 145, 217, 0.9);
+	cursor: pointer;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	font-weight: lighter;
+	font-family: 'Poppins';
+	font-size: 12px;
+}
+
+.option.yes-ready {
+	border-radius: 50px;
+}
+
+.option.no-ready {
+	margin-left: 10px;
+	border-radius: 50px;
+}
+
+.course-web {
+	background-color: rgba(0, 145, 217, 0.9);
+    color: white;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-left: 45px;
+    width: 70px;
+}
+
+
+@media only screen and (max-width: 414px) {
+	body {
+		background-color: #D6D09C;
+	}
+
+	.wrapper-all {
+		display: none;
+	}
+	
+	.mobile { 
+		display: block; 
+	}
+
+	.chat-mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		/* height: 100vh; */
+	}
+
+	.message {
+		background-color: #E8F0F2;
+		color: #545454;
+		border-radius: 10px;
+		position: relative;
+		margin-bottom: 20px;
+		padding: 8px 0px 10px 8px;
+		font-size: 12px;
+		font-weight: lighter;
+	}
+
+	.message.left p {
+		width: 90%;
+		/* background-color: red; */
+	}
+
+	.message.right p {
+		width: 100%;
+		margin-right: 8px;
+		margin-left: 10px;
+	}
+
+	.time {
+		position: absolute;
+		bottom: 3px;
+		right: 10px;
+		padding-top: 10px;
+		color: #545454;
+		font-size: 8px;
+	}
+
+	.course {
+		background-color: rgba(255, 255, 255, 0.9);
+		border-radius: 50px;
+		position: relative;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+
+	.choices {
+		border-radius: 30px;
+		position: relative;
+		margin-bottom: 15px;
+	}
+
+	.option {
+		background-color: rgba(0, 145, 217, 0.9);
+		cursor: pointer;
+		color: white;
+		padding: 10px 20px 10px 20px;
+		font-weight: lighter;
+		font-family: 'Poppins';
+		font-size: 12px;
+	}
+
+	.option.yes-ready {
+		border-radius: 50px;
+	}
+
+	.option.no-ready {
+		margin-left: 10px;
+		border-radius: 50px;
+	}
+
+	.message.left, .choices.left, .course.left {
+		margin-left: 10px;
+	}
+
+	.message.right {
+		align-self: flex-end;
+		margin-right: 10px;
+	}
+
+	.input-icons i {
+		position: absolute;
+	}
+	.input-icons {
+		width: 80%;
+	}
+	.icon {
+		padding: 10px;
+		min-width: 40px;
+	}
+}
