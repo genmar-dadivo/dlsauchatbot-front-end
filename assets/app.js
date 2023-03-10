@@ -76,6 +76,7 @@ $(document).ready(function () {
             type: 'POST',
             url: 'http://127.0.0.1:8000/api/chat/ready',
             success: function (data) {
+                $('.no-ready').addClass('unclickable');
                 var time = new Date;
                 time = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
 
@@ -118,6 +119,8 @@ $(document).ready(function () {
 
     var ql;
     $('.chat-body, .messages-chat').on('click', '.course-web, .course', function () {
+        $('.course-web').addClass('unclickable');
+        $('.course').addClass('unclickable');
         var time = new Date;
         time = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
 
